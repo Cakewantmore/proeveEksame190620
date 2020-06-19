@@ -3,7 +3,6 @@ body {
 }
 
 header {
-  height: 100%;
   /* background-image: url(../img/2010-hus-i-tr.jpg);
     background-repeat: no-repeat;
     background-size: 100%; */
@@ -18,10 +17,15 @@ header {
 }
 
 header .headerImage {
-  max-height: 400px;
+  width: 100%;
+  height: 30vw;
 }
 
 header .headerImage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 25%;
+     object-position: 50% 25%;
   height: 100%;
   width: 100%;
 }
@@ -76,6 +80,28 @@ header .titleNav nav ul li a {
   color: white;
 }
 
+main .topMain {
+  padding: 3vw;
+}
+
+main .topMain h2 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+main .topMain .mainParagraphs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .footerBackground {
+  height: 30vw;
+  background-image: url(../img/5642_Hejrelunden_20.jpg);
+  background-position: 20% 50%;
+  background-size: 180%;
+}
+
 main .mainArticles {
   padding: 2%;
   width: 96%;
@@ -93,7 +119,7 @@ main .mainArticles {
 
 main .mainArticles img {
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
 }
 
 main .mainArticles article {
@@ -105,9 +131,19 @@ main .mainArticles article {
   width: 32%;
 }
 
-@media only screen and (max-width: 1000px) {
+main .mainArticles article p {
+  padding: 20px;
+}
+
+footer {
+  background-color: black;
+  height: 400px;
+  width: 100%;
+}
+
+/* @media only screen and(max-width:1000px) {
   main .mainArticles img {
     height: 200px;
   }
-}
+} */
 /*# sourceMappingURL=style.css.map */
